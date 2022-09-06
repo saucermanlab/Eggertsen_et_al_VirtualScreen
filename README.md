@@ -4,6 +4,7 @@ Eggertsen et al
 Initial setup for the model
 Netflux is required for this model to run. Download netflux files from https://github.com/saucermanlab/Netflux
 
+The included files should be downloaded into the same folder to run effectively as written. 
 The figures from the manuscript can be remade using the associated code as listed below:
 
 Figure 1 - drugAction.m
