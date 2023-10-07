@@ -11,8 +11,7 @@ end
 namepos = findstr('.xls', model); namestr = cellstr(model(1:namepos-1));
 
 [specID,reactionIDs,~,paramList,ODElist,~, error] = util.xls2Netflux(namestr,model);
-commandODE = util.exportODE2(specID,paramList,ODElist);
-[a,commandPARAM,b] = util.exportODE(specID,paramList,ODElist,'ODEfun');
+[commandODE,commandPARAM,b] = util.exportODE(specID,paramList,ODElist,'ODEfun');
 util.textwrite('ODEfun_fromNetflux.m',commandODE);
 util.textwrite('ODEfun_loadParams_fromNetflux.m',commandPARAM);
 
